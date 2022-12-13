@@ -125,3 +125,22 @@ average
 )
 
 (sqrtbox 2)
+
+
+;---------------------------
+;Q1: defference between `A` and `(A)`: `A` is a variable/data, `(A)` is a procedure without parameters.
+;---------------------------
+
+(define (C) (* 5 5))
+C ; output: #<procedure:C>
+(C) ;output: 25
+A ; output: 25
+
+;=============================
+; (A)
+; output:  application: not a procedure;
+; expected a procedure that can be applied to arguments
+;   given: 25
+;   context...:
+;=============================
+
